@@ -1,1 +1,1 @@
-<!-- your code here -->
+my-new-component
