@@ -9,6 +9,7 @@ const name = pkg.name
 
 export default {
 	input: 'src/index.js',
+  external: ['svelte'],
 	output: [
 		{ file: pkg.module, 'format': 'es' },
 		{ file: pkg.main, 'format': 'umd', name }
