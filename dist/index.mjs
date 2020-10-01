@@ -363,9 +363,10 @@ function instance($$self, $$props, $$invalidate) {
 
 	const callback = () => {
 		$$invalidate(0, names = ["a", "b"]);
+		console.log("changing names variable from async callback");
 	}; // console.log(`FieldArray fieldState for ${name}:`, fields.names())
 
-	setTimeout(callback, 0);
+	setTimeout(callback, 1000);
 
 	$$self.$$set = $$props => {
 		if ("$$scope" in $$props) $$invalidate(1, $$scope = $$props.$$scope);
